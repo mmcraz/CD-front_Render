@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'todoApp';
 
   public newData: any = '';
-  readonly apiEndpoint = 'http://localhost:5039/api/tododb/';
+  readonly apiEndpoint = 'https://cd-backend-render.onrender.com/api/tododb/';
 
   public list: any = [];
 
