@@ -1,0 +1,15 @@
+<!-- Video Ref: https://www.youtube.com/watch?v=TRhDiekMrSk -->
+
+<!-- Node ver 18.19.0-->
+<!-- Angular Cli ver 17-->
+
+<h2>To Do MEAN Application</h2>
+<input type="text" [(ngModel)]="newData" />
+<button (click)="add()">Add</button>
+<table>
+  <tr *ngFor="let d of list">
+    <td>{{ d.id }}</td>
+    <td>{{ d.desc }}</td>
+    <td><button type="button" (click)="delete(d.id)">delete</button></td>
+  </tr>
+</table>
